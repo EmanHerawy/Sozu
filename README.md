@@ -4,7 +4,6 @@
 
 Hadi is a project designed to build intelligent agents for various applications, focusing on decentralized finance (DeFi) projects that adhere to ethical principles, particularly in compliance with Shariah law.
 
-
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -12,18 +11,33 @@ Before you begin, ensure you have met the following requirements:
 -Python 3.11.10 (or the specified version for your project)
 -Conda Package Manager (Download from Conda-Forge)
 -pip 23.1.2 (or later)
+First, if you haven't already, install uv:
 
+```bash
+pip install uv
+```
 
+Next, navigate to `newagent` directory and install the dependencies:
+
+(Optional) Lock the dependencies and install them by using the CLI command:
+
+```bash
+crewai install
+```
+
+copy the .env.example file and rename it to .env and add your OPENAI_API_KEY and MODEL
 
 - **Run the application**
-   ```bash
+  ```bash
   crewai  run
-   ```
+  ```
 - if u have any issue with crewai, please run check this article https://medium.com/@reachignatius/crewai-boilerplate-setup-60f85d71e95e
-## Demo 
+
+## Demo
 
 by running the command `crewai  run`
-``` bash
+
+```bash
 Running the Crew
 # Agent: DeFi Researcher
 ## Task: Conduct thorough research on DeFi projects that adhere to Ethical Principles, focusing on compliance with Shariah law in DeFi Make sure you find any interesting and relevant Projects running in mantel network given the current year is 2025.
@@ -31,7 +45,7 @@ Running the Crew
 
 
 # Agent: DeFi Researcher
-## Final Answer: 
+## Final Answer:
 1. **EthicalFi**: This is a decentralized finance platform that adheres strictly to ethical guidelines. It ensures lending and borrowing practices that empower individuals and businesses while creating a fair and transparent environment. EthicalFi also leverage Mantel Chain's Advanced DeFi Infrastructure for their operations.
 
 2. **HalalChain**: An innovative platform that caters to the Muslim population by promoting Shariah-Compliant financial instruments. Investors can partake in HalalChain's DeFi protocols without compromising their beliefs.
@@ -61,7 +75,7 @@ Each of these platforms utilize the advanced and secure infrastructure of the Ma
 
 
 # Agent: AI LLMs Reporting Analyst
-## Final Answer: 
+## Final Answer:
 # DeFi Projects Incorporating Ethical Finance Principles
 
 ## 1. EthicalFi
