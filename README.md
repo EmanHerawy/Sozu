@@ -34,8 +34,9 @@ copy the .env.example file and rename it to .env and add your OPENAI_API_KEY and
 - if u have any issue with crewai, please run check this article https://medium.com/@reachignatius/crewai-boilerplate-setup-60f85d71e95e
 
 ## Demo
-
+ check the video in https://www.loom.com/share/a96cb2e04ff2483c88be75795e659ef1?sid=59e12a7f-4d51-4395-a8d1-ef7e16621fc4
 by running the command `crewai  run`
+
 
 ```bash
 Running the Crew
