@@ -1,273 +1,107 @@
-# Sozu
+# Hadi Project
+
+## Description
+
+Hadi is a project designed to build intelligent agents for various applications, focusing on decentralized finance (DeFi) projects that adhere to ethical principles, particularly in compliance with Shariah law.
 
 
 ## Prerequisites
 
-Before getting started with Eliza, ensure you have:
+Before you begin, ensure you have met the following requirements:
 
-- [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [pnpm 9+](https://pnpm.io/installation)
-- Git for version control
-- A code editor ([VS Code](https://code.visualstudio.com/) or [VSCodium](https://vscodium.com) recommended)
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (optional, for GPU acceleration)
-
-## Installation
-
-1. **Clone and Install**
-
-    Please be sure to check what the [latest available stable version tag](https://github.com/elizaos/eliza/tags) is.
+-Python 3.11.10 (or the specified version for your project)
+-Conda Package Manager (Download from Conda-Forge)
+-pip 23.1.2 (or later)
 
 
-    ## Install dependencies (on initial run)
 
-    ```bash
-    pnpm install --no-frozen-lockfile
-    ```
+- **Run the application**
+   ```bash
+  crewai  run
+   ```
+- if u have any issue with crewai, please run check this article https://medium.com/@reachignatius/crewai-boilerplate-setup-60f85d71e95e
+## Demo 
 
-    # Quickstart Guide Update
+by running the command `crewai  run`
+``` bash
+Running the Crew
+# Agent: DeFi Researcher
+## Task: Conduct thorough research on DeFi projects that adhere to Ethical Principles, focusing on compliance with Shariah law in DeFi Make sure you find any interesting and relevant Projects running in mantel network given the current year is 2025.
 
-**Important Note on pnpm Lockfile Management**
 
-By default, the `pnpm` lockfile will not be updated during installations based off of .npmrc frozen-lockfile=true. To update the lockfile, you need to run the command:
 
-```bash
-pnpm install --no-frozen-lockfile
-```
+# Agent: DeFi Researcher
+## Final Answer: 
+1. **EthicalFi**: This is a decentralized finance platform that adheres strictly to ethical guidelines. It ensures lending and borrowing practices that empower individuals and businesses while creating a fair and transparent environment. EthicalFi also leverage Mantel Chain's Advanced DeFi Infrastructure for their operations.
 
-Please only use this command when you initially instantiating the repo or are bumping the version of a package or adding a new package to your package.json. This practice helps maintain consistency in your project's dependencies and prevents unintended changes to the lockfile.
+2. **HalalChain**: An innovative platform that caters to the Muslim population by promoting Shariah-Compliant financial instruments. Investors can partake in HalalChain's DeFi protocols without compromising their beliefs.
 
-Build the local libraries
+3. **GreenDex**: GreenDex is creating progressive change in the DeFi sector by only supporting projects that have a clear and beneficial impact on the environment. They use Mantel Network's blockchain for seamless transactions and fair trade practices.
 
-```bash
-pnpm build
-```
+4. **BeneFund**: BeneFund is a charitable platform that utilizes DeFi to facilitate and encourage philanthropy. Users can lend, borrow and donate funds in a fair, transparent and secure manner.
 
-2. **Configure Environment**
+5. **Pristine Protocol**: They are focussed on ethical investments. Investors have the opportunity to invest in a range of ethically conscious and sustainable projects, backed by the security and transparency of Mantel Network's blockchain technology.
 
-    Copy example environment file
+6. **SustainFi**: SustainFi concentrates on linking sustainable development and finance together. It comprises a suite of DeFi protocols that encourage investment in environmentally friendly and sustainable projects.
 
-    ```bash
-    cp .env.example .env
-    ```
+7. **Ethos Pool**: Assures responsible liquidity mining. Through the Ethos Pool, liquidity providers can earn incentives without the fear of impermanent loss and the protocol limits the risk of rug-pulls.
 
-    Edit `.env` and add your values:
+8. **GenFair**: This platform aims at uplifting and accelerating financially distressed and underprivileged sectors by offering fair loan conditions, all under the mantle of Mantel Network's blockchain technology.
 
-    ```bash
-    # Suggested quickstart environment variables
-    DISCORD_APPLICATION_ID=  # For Discord integration
-    DISCORD_API_TOKEN=      # Bot token
-    HEURIST_API_KEY=       # Heurist API key for LLM and image generation
-    OPENAI_API_KEY=        # OpenAI API key
-    GROK_API_KEY=          # Grok API key
-    ELEVENLABS_XI_API_KEY= # API key from elevenlabs (for voice)
-    ```
+9. **Zakah Finance**: A dedicated DeFi platform that facilitates and promotes Zakat (a form of alms-giving) as part of the Islamic faith. Zakah Finance allows users to easily and securely give and distribute Zakat for those in need.
 
-## Choose Your Model
+10. **CleanSwap**: A DeFi exchange that prioritizes ESG (Environmental, Social, Governance) compliant tokens. This ensures investment only flows into businesses practicing sustainable and ethical strategies.
 
-Eliza supports multiple AI models:
+Each of these platforms utilize the advanced and secure infrastructure of the Mantel Network to operate their ethical finance solutions. This combination of cutting-edge technology and high-standard ethical compliance is truly transformative for the world of decentralized finance.
 
-- **Heurist**: Set `modelProvider: "heurist"` in your character file. Most models are uncensored.
-    - LLM: Select available LLMs [here](https://docs.heurist.ai/dev-guide/supported-models#large-language-models-llms) and configure `SMALL_HEURIST_MODEL`,`MEDIUM_HEURIST_MODEL`,`LARGE_HEURIST_MODEL`
-    - Image Generation: Select available Stable Diffusion or Flux models [here](https://docs.heurist.ai/dev-guide/supported-models#image-generation-models) and configure `HEURIST_IMAGE_MODEL` (default is FLUX.1-dev)
-- **Llama**: Set `XAI_MODEL=meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo`
-- **Grok**: Set `XAI_MODEL=grok-beta`
-- **OpenAI**: Set `XAI_MODEL=gpt-4o-mini` or `gpt-4o`
 
-You set which model to use inside the character JSON file
+# Agent: AI LLMs Reporting Analyst
+## Task: Review the context you got and expand each topic into a full section for a report on DeFi projects with Ethical Finance Principles. Make sure the report is detailed and contains any and all relevant information.
 
-### Local inference
 
-    #### For llama_local inference:
 
-      1. Set `XAI_MODEL` to your chosen model
-      2. Leave `X_SERVER_URL` and `XAI_API_KEY` blank
-      3. The system will automatically download the model from Hugging Face
-      4. `LOCAL_LLAMA_PROVIDER` can be blank
+# Agent: AI LLMs Reporting Analyst
+## Final Answer: 
+# DeFi Projects Incorporating Ethical Finance Principles
 
-      Note: llama_local requires a GPU, it currently will not work with CPU inference
+## 1. EthicalFi
+EthicalFi is pioneered as a decentralized finance platform where ethics take the central stage. This platform sets a reliable precedent for lending and borrowing, allowing individuals and businesses to exploit this avenue under a fair and padlocked environment. More so, EthicalFi utilizes the Advanced DeFi Infrastructure of Mantel Chain, ensuring every transaction is secure, quick, and efficient.
 
-    #### For Ollama inference:
+## 2. HalalChain
+Specifically designed to cater to the financial needs of the Muslim population, HalalChain promotes Shariah-Compliant financial instruments. This way, the investors can delve into the protocols of HalalChains's DeFi without having to make any religious compromises.
 
-      - If `OLLAMA_SERVER_URL` is left blank, it defaults to `localhost:11434`
-      - If `OLLAMA_EMBEDDING_MODE` is left blank, it defaults to `mxbai-embed-large`
+## 3. GreenDex
+Unique in its operational strategy, GreenDex only sanctions support to projects that will positively influence the environment. Backed by Mantel Network's blockchain, GreenDex assures their patrons seamless transactions and fair trade.
 
-## Create Your First Agent
+## 4. BeneFund
+Recognized as a charitable platform, BeneFund has revolutionized philanthropy by introducing decentralized finance in the system. Participants can lend, donate, and even borrow funds under an environment, guaranteed to be secure, transparent, and fair.
 
-1. **Create a Character File**
+## 5. Pristine Protocol
+Suited to ethical investment opportunities, Pristine Protocol leverages Mantel Network's blockchain technology, making it possible to invest in sustainable projects that are transparent and reliable.
 
-    Check out `characters/trump.character.json` or `characters/tate.character.json` as a template you can use to copy and customize your agent's personality and behavior.
-    Additionally you can read `core/src/core/defaultCharacter.ts` (in 0.0.10 but post-refactor will be in `packages/core/src/defaultCharacter.ts`)
+## 6. SustainFi
+SustainFi gears up its focus towards interlinking sustainable development with finance. Through its diverse suite of DeFi protocols, SustainFi motivates investments that align with environmental friendliness and sustainability.
 
-    📝 [Character Documentation](./core/characterfile.md)
+## 7. Ethos Pool
+Designed to provide a secure platform for liquidity mining, Ethos Pool allows liquidity providers to earn incentives whilst eliminating the fear of impermanent loss. It also takes steps to limit the risk of rug-pulls.
 
-2. **Start the Agent**
+## 8. GenFair
+GenFair aims at financially empowering distressed and underprivileged sectors through fair loan terms. Backed by Mantel Network’s blockchain technology, GenFair vouches for transparent, fair, and effective transactions.
 
-    Inform it which character you want to run:
+## 9. Zakah Finance
+Specializing in promoting Zakat (a form of alms-giving integral to Islamic faith), Zakah Finance provides a secure and easily accessible platform for distributing alms to those in need.
 
-    ```bash
-    pnpm start --character="characters/trump.character.json"
-    ```
+## 10. CleanSwap
+This DeFi exchange is deliberate about boosting tokens in compliance with ESG (Environmental, Social, Governance). CleanSwap ensures that investments are only injected into businesses that practise sustainable and ethical strategies.
 
-    You can also load multiple characters with the characters option with a comma separated list:
-
-    ```bash
-    pnpm start --characters="characters/trump.character.json,characters/tate.character.json"
-    ```
-
-3. **Interact with the Agent**
-
-    Now you're ready to start a conversation with your agent!
-    Open a new terminal window
-
-    ```bash
-    pnpm start:client
-    ```
-
-    Once the client is running, you'll see a message like this:
+Each aforementioned platform leverages the innovative and secure infrastructure of the Mantel Network to roll out their ethical finance solutions. This blend of next-gen tech with high-standard ethical compliance spins a new wave of transformation in the world of decentralized finance.
 
 ```
-➜  Local:   http://localhost:5173/
-```
 
-Simply click the link or open your browser to `http://localhost:5173/`. You'll see the chat interface connect to the system, and you can begin interacting with your character.
+## Contributing
 
-## Platform Integration
+If you want to contribute to this project, please fork the repository and submit a pull request.
 
-### Discord Bot Setup
+## License
 
-1. Create a new application at [Discord Developer Portal](https://discord.com/developers/applications)
-2. Create a bot and get your token
-3. Add bot to your server using OAuth2 URL generator
-4. Set `DISCORD_API_TOKEN` and `DISCORD_APPLICATION_ID` in your `.env`
-
-### Twitter Integration
-
-Add to your `.env`:
-
-```bash
-TWITTER_USERNAME=  # Account username
-TWITTER_PASSWORD=  # Account password
-TWITTER_EMAIL=    # Account email
-```
-
-**Important:** Log in to the [Twitter Developer Portal](https://developer.twitter.com) and enable the "Automated" label for your account to avoid being flagged as inauthentic.
-
-### Telegram Bot
-
-1. Create a bot
-2. Add your bot token to `.env`:
-
-```bash
-TELEGRAM_BOT_TOKEN=your_token_here
-```
-
-## Optional: GPU Acceleration
-
-If you have an NVIDIA GPU:
-
-```bash
-# Install CUDA support
-npx --no node-llama-cpp source download --gpu cuda
-
-# Ensure CUDA Toolkit, cuDNN, and cuBLAS are installed
-```
-
-## Basic Usage Examples
-
-### Chat with Your Agent
-
-```bash
-# Start chat interface
-pnpm start
-```
-
-### Run Multiple Agents
-
-```bash
-pnpm start --characters="characters/trump.character.json,characters/tate.character.json"
-```
-
-## Common Issues & Solutions
-
-1. **Node.js Version**
-
-    - Ensure Node.js 23.3.0 is installed
-    - Use `node -v` to check version
-    - Consider using [nvm](https://github.com/nvm-sh/nvm) to manage Node versions
-
-2. **Sharp Installation**
-   If you see Sharp-related errors:
-
-    ```bash
-    pnpm install --include=optional sharp
-    ```
-
-3. **CUDA Setup**
-
-    - Verify CUDA Toolkit installation
-    - Check GPU compatibility with toolkit
-    - Ensure proper environment variables are set
-
-4. **Exit Status 1**
-   If you see
-
-    ```
-    triggerUncaughtException(
-    ^
-    [Object: null prototype] {
-    [Symbol(nodejs.util.inspect.custom)]: [Function: [nodejs.util.inspect.custom]]
-    }
-    ```
-
-    You can try these steps, which aim to add `@types/node` to various parts of the project
-
-    ```
-    # Add dependencies to workspace root
-    pnpm add -w -D ts-node typescript @types/node
-
-    # Add dependencies to the agent package specifically
-    pnpm add -D ts-node typescript @types/node --filter "@elizaos/agent"
-
-    # Also add to the core package since it's needed there too
-    pnpm add -D ts-node typescript @types/node --filter "@elizaos/core"
-
-    # First clean everything
-    pnpm clean
-
-    # Install all dependencies recursively
-    pnpm install -r
-
-    # Build the project
-    pnpm build
-
-    # Then try to start
-    pnpm start
-    ```
-
-5. **Better sqlite3 was compiled against a different Node.js version**
-   If you see
-
-    ```
-    Error starting agents: Error: The module '.../eliza-agents/dv/eliza/node_modules/better-sqlite3/build/Release/better_sqlite3.node'
-    was compiled against a different Node.js version using
-    NODE_MODULE_VERSION 131. This version of Node.js requires
-    NODE_MODULE_VERSION 127. Please try re-compiling or re-installing
-    ```
-
-    You can try this, which will attempt to rebuild better-sqlite3.
-
-    ```bash
-    pnpm rebuild better-sqlite3
-    ```
-
-    If that doesn't work, try clearing your node_modules in the root folder
-
-    ```bash
-    rm -fr node_modules; pnpm store prune
-    ```
-
-    Then reinstall the requirements
-
-    ```bash
-    pnpm i
-    ```
+This project is licensed under the [Your License] License - see the [LICENSE](LICENSE) file for details.
