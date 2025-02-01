@@ -1,6 +1,8 @@
 *.ts
 !index.ts
 !character.ts
+!Sheikh.character.ts
+.env
 .env
 *.env
 .env*
